@@ -23,7 +23,7 @@ class PostRepository {
         }).toList();
       }
     } on SocketException {
-      throw Exception('Error while fetching data');
+      throw Exception('something went wrong');
     } on TimeoutException {
       throw Exception('Error while fetching data');
     }
